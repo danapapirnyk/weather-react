@@ -1,0 +1,181 @@
+body {
+  background-image: url(https://media.istockphoto.com/photos/seascape-view-picture-id187484756?k=20&m=187484756&s=612x612&w=0&h=rweSJVkwsV226KkKdYYuiGHldiUSpj9eBJLo3fJJNbs=);
+  background-size: cover;
+}
+.body-wrap {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.search-tab {
+  max-width: 700px;
+  margin: 0 auto;
+}
+button.search-button,
+button.current-button {
+  background-color: rgba(166, 150, 200, 0.5);
+}
+
+div.card-box {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 30px 30px 60px;
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: rgba(166, 150, 200, 0.5);
+}
+h1 {
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+p.current-date {
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+h2.current-temp {
+  font-size: 70px;
+  font-weight: 300;
+  color: white;
+}
+
+.celcius-link,
+#line,
+.fahrenheit-link {
+  position: relative;
+  bottom: 22px;
+  font-size: 32px;
+  text-decoration: none;
+  color: #dca2d9;
+}
+.celcius-link:hover {
+  color: white;
+}
+.fahrenheit-link:hover {
+  color: white;
+}
+.current-temp .active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
+}
+
+#line {
+  color: white;
+  font-size: 28px;
+  position: relative;
+  bottom: 24px;
+}
+h4.day-temp {
+  font-weight: lighter;
+  color: white;
+}
+.icon {
+  width: 100px;
+  margin-bottom: 60px;
+  position: relative;
+  left: 8px;
+}
+h3.icon-text {
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.main-card {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.forecast-info {
+  font-weight: 300;
+  font-style: oblique;
+  color: white;
+  margin-bottom: 24px;
+}
+.forecast {
+  color: white;
+  text-align: center;
+}
+.secondary-icons {
+  width: 40px;
+  display: block;
+  margin: 15px auto 5px;
+}
+.forecast-temp {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.footer {
+  font-family: "PT Mono", monospace;
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-top: 26px;
+}
+.link-github,
+.link-netlify {
+  text-decoration: none;
+  color: #795894;
+}
+.link-github:hover {
+  color: black;
+}
+.link-netlify:hover {
+  color: black;
+}
+.footer-icons {
+  text-align: center;
+  font-size: 20px;
+}
+
+.inst-icon:hover,
+.fb-icon:hover,
+.lnk-icon:hover {
+  color: #a696c8;
+  cursor: pointer;
+}
+.inst-link,
+.fb-link,
+.lnk-link {
+  text-decoration: none;
+  color: black;
+}
+.inst-link {
+  position: relative;
+  right: 20px;
+}
+.lnk-link {
+  position: relative;
+  left: 20px;
+}
+@media (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  div.card-box {
+    padding: 10px 20px 20px 10px;
+  }
+  h2.current-temp {
+    font-size: 60px;
+    padding-left: 17px;
+    padding-top: 116px;
+  }
+  .fahrenheit-link,
+  #line {
+    display: none;
+  }
+  h4.day-temp,
+  .forecast-info {
+    padding-left: 17px;
+  }
+  #icon {
+    position: relative;
+    left: 40px;
+  }
+}
