@@ -50,7 +50,7 @@ export default function App() {
       <div className="footer">
         Coded by Dana Papirnyk and is{" "}
         <a
-          href="https://github.com/danapapirnyk"
+          href="https://github.com/danapapirnyk/weather-react"
           target="_blank"
           className="link-github"
           rel="noreferrer"
