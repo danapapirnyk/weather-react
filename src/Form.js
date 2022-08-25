@@ -20,7 +20,7 @@ export default function Form() {
         Search
       </button>
       <button
-        class="btn btn-outline-light current-button shadow"
+        className="btn btn-outline-light current-button shadow"
         id="location-button"
       >
         Current location
