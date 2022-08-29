@@ -33,7 +33,7 @@ export default function App() {
           href="https://github.com/danapapirnyk"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-github"></i>
+          <i className="fa-brands fa-github"></i>
         </a>
         <a
           className="lnk-link"

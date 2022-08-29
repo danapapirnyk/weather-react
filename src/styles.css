@@ -24,10 +24,20 @@ div.card-box {
 }
 h1 {
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 500;
   color: white;
   margin-bottom: 0;
   text-transform: capitalize;
+}
+li.icon-text {
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  list-style: none;
+  text-transform: capitalize;
+}
+.information {
+  opacity: 3;
 }
 .current-date {
   font-weight: lighter;
@@ -35,10 +45,13 @@ h1 {
   color: white;
   margin-bottom: 0;
 }
-.current-temp {
+.temperature {
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 50px;
   color: white;
+}
+.unit {
+  color: #ffffff;
 }
 #line {
   color: white;
@@ -49,11 +62,12 @@ h1 {
 .day-temp {
   font-weight: lighter;
   color: white;
+
 }
-.icon {
+.icon canvas {
   width: 100px;
   margin-bottom: 30px;
-  position: relative;
+  position: inline-block;
  
 }
 ul {
@@ -62,20 +76,15 @@ ul {
   padding-left: 2px;
   list-style: none;
 }
-li.icon-text {
-  color: white;
-  font-weight: lighter;
-  font-size: 20px;
-  list-style: none;
-  text-transform: capitalize;
-}
+
 .main-card {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .forecast-info {
   font-weight: 300;
   font-style: oblique;
-  color: white;
+  color: rgb(247, 247, 247);
+  
 }
 
 
