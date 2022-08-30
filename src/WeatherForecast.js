@@ -21,11 +21,13 @@ return (
       {forecast.map(function (dailyForecast, index) {
 if (index < 7) {
   return (
-  <div className="col" key={index}>
-        <WeatherForecastDay data={dailyForecast}/>
-      </div>
-); 
-      }
+    <div className="col" key={index}>
+      <WeatherForecastDay data={dailyForecast} />
+    </div>
+  );
+} else {
+  return null;
+}
       })}
     </div>
   </div>
