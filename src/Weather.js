@@ -31,6 +31,16 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 axios.get(apiUrl).then(handleResponse);
 }
 
+function showLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+function searchLocation(position) {
+  const currentCoords = `lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
+  search(currentCoords);
+}
+
 function handleSUbmit(event) {
   event.preventDefault();
   search();
@@ -42,7 +52,11 @@ setCity(event.target.value);
 if (weatherData.ready) {
 return (
   <div className="container body-wrap">
-    <form className="input-group mb-3 search-tab" id="search-tab" onSubmit={handleSUbmit}>
+    <form
+      className="input-group mb-3 search-tab"
+      id="search-tab"
+      onSubmit={handleSUbmit}
+    >
       <input
         type="text"
         className="form-control shadow"
@@ -62,13 +76,14 @@ return (
       <button
         className="btn btn-outline-light current-button shadow"
         id="location-button"
+        onClick={showLocation}
       >
         Current location
       </button>
     </form>
     <div className="card-box">
       <WeatherInfo data={weatherData} />
-      <WeatherForecast coordinates={weatherData.coordinates}/>
+      <WeatherForecast coordinates={weatherData.coordinates} />
     </div>
   </div>
 );
